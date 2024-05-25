@@ -1,18 +1,18 @@
-
-/* *{
-  background-color: #05161A;
+/* 
+*{
+  color: #05161A;
   color: #072E33;
   color: #0C7078;
   color: #0F9690;
   color: #6DA5C0;
   color: #294D61;
-} */
+}  */
 :root{
-  --main-background-color:#161515;
-  --border-color:orangered;
-  --text-color:orangered;
-  --hover-text-color:orange;
-  --background-color:#272424;
+  --main-background-color:#05161A;
+  --border-color:#294D61;
+  --text-color:#0C7078;
+  --hover-text-color:#0F9690;
+  --background-color:#81b3ccc8;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
