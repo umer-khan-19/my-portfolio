@@ -1,18 +1,18 @@
-/* 
-*{
+
+/* *{
   color: #05161A;
   color: #072E33;
   color: #0C7078;
   color: #0F9690;
   color: #6DA5C0;
   color: #294D61;
-}  */
+}   */
 :root{
   --main-background-color:#05161A;
   --border-color:#294D61;
-  --text-color:#0C7078;
+  --text-color:#4ce3ee;
   --hover-text-color:#0F9690;
-  --background-color:#81b3ccc8;
+  --background-color:#4b616b88;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -114,7 +114,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: black;
+  background-color:var(--main-background-color);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -133,7 +133,6 @@ a:hover {
 .menu-links a:hover{
   color: var(--hover-text-color);
   text-underline-offset: 1rem;
-  text-decoration-color: orange;
 }
 
 .menu-links li {
@@ -200,6 +199,10 @@ section {
   width: 400px;
   margin: auto 0;
 }
+.section__pic-container:hover{
+  filter: drop-shadow(10px 10px 50px #6DA5C0);
+}
+
 
 .section__text {
   align-self: center;
@@ -242,12 +245,7 @@ section {
   cursor: pointer;
   height: 2rem;
   filter: drop-shadow(1px 1px 5px var(--text-color));
-  color: yellow;
 }
-/* .linkedin:hover{
-  filter: drop-shadow(1px 1px 10px blue);
-
-} */
 
 /* BUTTONS */
 
@@ -269,29 +267,15 @@ section {
 .btn-color-2 {
   border: 0.1rem solid var(--border-color);
   color: var(--text-color);
+  background-color: var(--main-background-color);
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
+
+  background-color: var(--hover-text-color);
+  color: var(--main-background-color);
   cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: var(--hover-text-color);
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border:0.1rem solid var(--hover-text-color);
 }
 
 .btn-container {
